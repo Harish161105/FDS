@@ -1,21 +1,20 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 
-int main() {
-	int n,m = 1;
-	cout<<"enter the number :" ;
-	cin>>n ;
-	
-	if(n>0){
-	
-		for(int i = 1 ; i < n +1  ; i++ ){
-		m = m*i;
-		}		
-		cout<<"factorial  = "<<m ;
-		
-	}
-	else	{
-		cout<<"enter a positive number";
-	}
-	return 0;
- }
+int main()
+{
+    int a;
+    cout<<"enter the number: ";
+    cin>>a;
+    string arr[10]={"one","two","three","four","five","six","seven","eight","nine","greater than nine"};
+    
+    if(a<=9)
+    {
+        cout<<"the number youve entered is "<<arr[a-1];
+    }
+    
+    else
+    {
+        cout<<"the number youve entered is "<<arr[9];
+    }
+}
